@@ -1,0 +1,27 @@
+"devices":
+  "MXDIFALO0001RTBHCSRMOB01":
+    "connections":
+      "cli":
+        "arguments":
+          "init_config_commands": []
+        "ip": "10.241.12.188"
+        "protocol": "ssh"
+    "credentials":
+      "default":
+        "password": "%ENV{ACSPASSWORD}"
+        "username": "%ENV{ACSUSER}"
+    "os": "iosxe"
+    "type": "router"
+  "MXDIFALO0006RTBHCSRMOB01":
+    "connections":
+      "cli":
+        "arguments":
+          "init_config_commands": []
+        "ip": "10.241.12.213"
+        "protocol": "ssh"
+    "credentials":
+      "default":
+        "password": "%ENV{ACSPASSWORD}"
+        "username": "%ENV{ACSUSER}"
+    "os": "iosxe"
+    "type": "router"
