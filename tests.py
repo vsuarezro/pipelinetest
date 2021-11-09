@@ -4,8 +4,11 @@ import yaml
 import pytest
 
 def test_yamls():
-  files = [x for os.listdir(".") if pathlib.Path(x).suffix == "yaml"]
+  files = [x for x in os.listdir(".") if x.endswith(("yaml","yml",))]
+  print(files)
+  assert False
   for file in files:
+    print(file)
     with open(file, 'r') as stream:
       try:
         return yaml.load(stream)
